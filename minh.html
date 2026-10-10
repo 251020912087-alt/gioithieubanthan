@@ -1,0 +1,256 @@
+```html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin cá nhân</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Bài tập thực hành HTML</h1>
+    </header>
+
+    <main>
+        <!-- BÀI 1: THÔNG TIN CÁ NHÂN -->
+        <section>
+            <h2>Bài 1: Thông tin cá nhân</h2>
+
+            <h3>Thông tin cá nhân</h3>
+
+            <p><strong>Họ tên:</strong> Nguyễn Triều Minh</p>
+            <p><strong>Ngày sinh:</strong> 05/05/2007</p>
+            <p><strong>Lớp:</strong> ICT1-07</p>
+
+            <img
+                src="image/anh3.jpg" alt="Ảnh đại diện sinh viên"
+                width="200"
+            >
+
+            <h3>Sở thích</h3>
+            <ul>
+                <li>Bóng chuyền</li>
+                <li>Đá bóng</li>
+                <li>Du lịch</li>
+            </ul>
+
+            <p>
+                <a href="https://www.facebook.com/profile.php?id=61591407267862"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Facebook
+                </a>
+            </p>
+
+            <p>
+                <a href="https://github.com/251020912087-alt"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    GitHub
+                </a>
+            </p>
+        </section>
+
+        <!-- BÀI 2: BẢNG ĐIỂM -->
+        <section>
+            <h2>Bài 2: Bảng điểm sinh viên</h2>
+
+            <table>
+                <caption>Bảng điểm học tập</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">STT</th>
+                        <th scope="col">Môn học</th>
+                        <th scope="col">Điểm</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Xây dựng ứng dụng web</td>
+                        <td>_</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Mạng máy tính</td>
+                        <td>_</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Giải tích</td>
+                        <td>_</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Chạy 1</td>
+                        <td>_</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>Đại số tuyến tính</td>
+                        <td>_</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th colspan="2" scope="row">
+                            Điểm trung bình
+                        </th>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- BÀI 3: FORM ĐĂNG KÝ -->
+        <section>
+            <h2>Bài 3: Form đăng ký sinh viên</h2>
+
+            <form action="#" method="get">
+                <div class="form-group">
+                    <label for="fullname">Họ tên:</label>
+                    <input
+                        type="text"
+                        id="fullname"
+                        name="fullname"
+                        placeholder="Họ và tên"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="123456@gmail.com"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Mật khẩu:</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Nhập mật khẩu"
+                        required
+                    >
+                </div>
+
+                <fieldset>
+                    <legend>Giới tính</legend>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="nam"
+                            required
+                        >
+                        Nam
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="nu"
+                        >
+                        Nữ
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="khac"
+                        >
+                        Khác
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Sở thích</legend>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="hobby"
+                            value="lap-trinh"
+                        >
+                        Chơi game
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="hobby"
+                            value="game"
+                        >
+                        Ăn uống
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="hobby"
+                            value="doc-sach"
+                        >
+                        Đọc sách
+                    </label>
+
+                      <label>
+                        <input
+                            type="checkbox"
+                            name="hobby"
+                            value="doc-sach"
+                        >
+                        Đọc sách
+                    </label>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="major">Ngành học:</label>
+
+                    <select id="major" name="major" required>
+                        <option value="">-- Chọn ngành học --</option>
+                        <option value="cntt">CNTT</option>
+                        <option value="kinh-te">Kinh tế</option>
+                        <option value="dien-tu">Điện tử</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="note">Ghi chú:</label>
+                    <textarea
+                        id="note"
+                        name="note"
+                        rows="4"
+                        placeholder="Nhập ghi chú..."
+                    ></textarea>
+                </div>
+
+                <button type="submit">Đăng ký</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Liên hệ : 251020912087@st.phenikaa-uni.edu.vn</p>
+    </footer>
+
+</body>
+</html>
+```
